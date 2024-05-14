@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  some-postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USERNAME=postgres
+      - POSTGRES_PASSWORD=mysecretpassword
+      - POSTGRES_DATABASE=apisolid
